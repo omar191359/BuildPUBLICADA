@@ -6,7 +6,7 @@
 	
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="icon" type="image/x-icon" href="/icons/favicon1.ico">
 		<meta name="generator" content="Astro v1.6.10">
 		<meta name="description" content="Página de inicio">
 		<meta name="keywords" content="hola">
@@ -14,9 +14,23 @@
 		<title>Morthlet</title>
 		<script src="https://kit.fontawesome.com/398b08d3d7.js" crossorigin="anonymous"></script>
 
-		<!--Opción AOS para animaciones al scrollear-->
+		<!--Opción AOS para animaciones al scrollear x-icon  svg+xml-->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" crossorigin="anonymous"></script>
+
+		<script>
+			AOS.init({disable: 'mobile'});
+	  	</script>
+
+	  	<script>
+		  AOS.init({
+			disable: function() {
+			  var maxWidth = 800;
+			  return window.innerWidth < maxWidth;
+			}
+		  });
+	  </script>
+	  
 	
 
 	<!--Body-->
@@ -58,14 +72,14 @@
 
 		
 		<!--Todo lo que aparece de Layout en otros archivos aparecerá aquí (slot)-->
-		<link rel="stylesheet" href="/assets/contacto.ce7698af.css" /><script type="module">const l=document.querySelector(".navbar");window.addEventListener("scroll",()=>{window.scrollY>=56?l.classList.add("navbar-scrolled"):window.scrollY<56&&l.classList.remove("navbar-scrolled")});
+		<link rel="stylesheet" href="/assets/contacto.c8e3609f.css" /><script type="module">const l=document.querySelector(".navbar");window.addEventListener("scroll",()=>{window.scrollY>=56?l.classList.add("navbar-scrolled"):window.scrollY<56&&l.classList.remove("navbar-scrolled")});
 </script><main>
 		<!-- Sección Principal -->
 		<section class="principal container-fluid text-center position-relative" id="arriba">			
 			<div class="row">
 				<div class="col-12 bannerInicio"> <!--quité clase "limitado"-->
 					<div class="logo position-absolute top-50 start-50 translate-middle">
-						<img src="/public/logo.png" alt="Imagen de fondo para ejemplo" width="35%" id="Logotipo">
+						<img src="/logo.png" alt="Imagen de fondo para ejemplo" width="35%" id="Logotipo">
 						<p>DYNAMIC. <span>MINIMALIST.</span> PROFESSIONAL.</p>		
 					</div>		
 				</div>
@@ -111,7 +125,7 @@
 				</div>
 				<div class="retrato col-lg-5 col-md-8 col-sm-8 text-center" data-aos="fade-right">
 					<br>
-					<img src="/public/sobreMi.png" alt="¡Este soy yo!" width="90%">
+					<img src="/sobreMi.png" alt="¡Este soy yo!" width="90%">
 				</div>
 			</div>
 		</section>
@@ -120,7 +134,7 @@
 		<section class="fraseUno container-fluid text-center position-relative">
 			<div class="row">
 				<div class="col-lg-12 p-0 position-relative" style="height: 100%;">
-					<img src="/public/frase1.png" alt="Menos es más" width="100%">	
+					<img src="/frase1.png" alt="Menos es más" width="100%">	
 				</div>
 			</div>
 		</section>
@@ -152,7 +166,7 @@
 				<div class="elementoS col-lg-3 col-sm-8 justify-content-md-center p-0 m-0">
 					<div class="row" data-aos="zoom-out">
 						<div class="col-md-3 text-center align-self-center">
-							<img src="/public/favicon.svg" width="100%" class="iconosS">	
+							<img src="/favicon.svg" width="100%" class="iconosS">	
 						</div>
 						<div class="cuadro S col-md-9">
 							<h2>Sesión Fotográfica</h2> 
@@ -167,7 +181,7 @@
 				<div class="elementoS col-lg-3 col-sm-8 justify-content-md-center p-0 m-0">
 					<div class="row" data-aos="zoom-out-left">
 						<div class="col-md-3 text-center align-self-center">
-							<img src="/public/favicon.svg" width="100%" class="iconosS">	
+							<img src="/favicon.svg" width="100%" class="iconosS">	
 						</div>
 						<div class="cuadro S col-md-9">
 							<h2>Sesión Fotográfica</h2> 
@@ -185,7 +199,7 @@
 				<div class="elementoS col-lg-3 col-sm-8 justify-content-md-center p-0 m-0">
 					<div class="row" data-aos="zoom-out-right" data-aos-offset="250">
 						<div class="col-md-3 text-center align-self-center">
-							<img src="/public/favicon.svg" width="100%" class="iconosS">	
+							<img src="/favicon.svg" width="100%" class="iconosS">	
 						</div>
 						<div class="cuadro S col-md-9">
 							<h2>Sesión Fotográfica</h2> 
@@ -200,7 +214,7 @@
 				<div class="elementoS col-lg-3 col-sm-8 justify-content-md-center p-0 m-0">
 					<div class="row" data-aos="zoom-out" data-aos-offset="250">
 						<div class="col-md-3 text-center align-self-center">
-							<img src="/public/favicon.svg" width="100%" class="iconosS">	
+							<img src="/favicon.svg" width="100%" class="iconosS">	
 						</div>
 						<div class="cuadro S col-md-9">
 							<h2>Sesión Fotográfica</h2> 
@@ -215,7 +229,7 @@
 				<div class="elementoS col-lg-3 col-sm-8 justify-content-md-center p-0 m-0">
 					<div class="row" data-aos="zoom-out-left" data-aos-offset="250">
 						<div class="col-md-3 text-center align-self-center">
-							<img src="/public/favicon.svg" width="100%" class="iconosS">	
+							<img src="/favicon.svg" width="100%" class="iconosS">	
 						</div>
 						<div class="cuadro S col-md-9">
 							<h2>Sesión Fotográfica</h2> 
@@ -243,25 +257,25 @@
 						<div class="col-md-3 text-center" data-aos="zoom-out" data-aos-offset="100"> <!--  align-items-flex-end -->
 							<h3>Fondo de pantalla 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Ilustración genérica 1.jpg" width="70%">
+							<img src="/Ilustración genérica 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center" data-aos="zoom-out" data-aos-offset="200">
 							<h3>Fondo de pantalla 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Ilustración genérica 1.jpg" width="70%">
+							<img src="Ilustración genérica 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center" data-aos="zoom-out" data-aos-offset="400">
 							<h3>Fondo de pantalla 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Ilustración genérica 1.jpg" width="70%">
+							<img src="/Ilustración genérica 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center" data-aos="zoom-out" data-aos-offset="500">
 							<h3>Fondo de pantalla 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Ilustración genérica 1.jpg" width="70%">
+							<img src="/Ilustración genérica 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 					</div>
@@ -270,25 +284,25 @@
 						<div class="col-md-3 text-center p-0 m-0" data-aos="zoom-out" data-aos-offset="100">
 							<h3>Recurso extra 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Recurso genérico 1.jpg" width="70%">
+							<img src="/Recurso genérico 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center p-0 m-0" data-aos="zoom-out" data-aos-offset="200">
 							<h3>Recurso extra 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Recurso genérico 1.jpg" width="70%">
+							<img src="/Recurso genérico 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center p-0 m-0" data-aos="zoom-out" data-aos-offset="300">
 							<h3>Recurso extra 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Recurso genérico 1.jpg" width="70%">
+							<img src="/Recurso genérico 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 						<div class="col-md-3 text-center p-0 m-0" data-aos="zoom-out" data-aos-offset="400">
 							<h3>Recurso extra 1</h3>
 							<p>Técnica: Ilustración digital</p>	
-							<img src="/public/Recurso genérico 1.jpg" width="70%">
+							<img src="/Recurso genérico 1.jpg" width="70%">
 							<p>Inserte aquí una descripción breve</p>	
 						</div>
 					</div>
@@ -378,5 +392,6 @@
 		<!-- Script necesario para animación AOS -->
 		<script>
 			AOS.init();
-		  </script>
+		</script>
+
 	</html>

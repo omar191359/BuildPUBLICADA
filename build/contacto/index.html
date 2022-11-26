@@ -6,7 +6,7 @@
 	
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="icon" type="image/x-icon" href="/icons/favicon1.ico">
 		<meta name="generator" content="Astro v1.6.10">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -14,9 +14,23 @@
 		<title>Contacto</title>
 		<script src="https://kit.fontawesome.com/398b08d3d7.js" crossorigin="anonymous"></script>
 
-		<!--Opción AOS para animaciones al scrollear-->
+		<!--Opción AOS para animaciones al scrollear x-icon  svg+xml-->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" crossorigin="anonymous"></script>
+
+		<script>
+			AOS.init({disable: 'mobile'});
+	  	</script>
+
+	  	<script>
+		  AOS.init({
+			disable: function() {
+			  var maxWidth = 800;
+			  return window.innerWidth < maxWidth;
+			}
+		  });
+	  </script>
+	  
 	
 
 	<!--Body-->
@@ -58,7 +72,7 @@
 
 		
 		<!--Todo lo que aparece de Layout en otros archivos aparecerá aquí (slot)-->
-		<link rel="stylesheet" href="/assets/contacto.ce7698af.css" /><script type="module">const l=document.querySelector(".navbar");window.addEventListener("scroll",()=>{window.scrollY>=56?l.classList.add("navbar-scrolled"):window.scrollY<56&&l.classList.remove("navbar-scrolled")});
+		<link rel="stylesheet" href="/assets/contacto.c8e3609f.css" /><script type="module">const l=document.querySelector(".navbar");window.addEventListener("scroll",()=>{window.scrollY>=56?l.classList.add("navbar-scrolled"):window.scrollY<56&&l.classList.remove("navbar-scrolled")});
 </script><main>
 	<section class="principal container-fluid text-center position-relative">
 		<div class="row">
@@ -72,7 +86,7 @@
 
 		<!-- Titular e información -->
 		<div class="row justify-content-md-center logoContacto">
-			<img src="/public/logo.png" alt="Imagen de fondo para ejemplo" id="Logotipo2">
+			<img src="/logo.png" alt="Imagen de fondo para ejemplo" id="Logotipo2">
 		</div>
 		<div class="infoContacto">
 			<h1>CONTACTO</h1>
@@ -205,5 +219,6 @@
 		<!-- Script necesario para animación AOS -->
 		<script>
 			AOS.init();
-		  </script>
+		</script>
+
 	</html>
